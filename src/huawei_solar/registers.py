@@ -1095,6 +1095,7 @@ REGISTERS: dict[str, RegisterDefinition] = {
         writeable=True,
         target_device=TargetDevice.SUN2000 | TargetDevice.SDONGLE,
     ),
+    rn.ACTIVE_ISLANDING_DETECT: U16Register(bool, 1, 42129, writeable=True),
     rn.WLAN_WAKEUP: I16Register(rv.WlanWakeup, 1, 45052, writeable=True),
     rn.SUN2000_EMMA: U16Register(bool, 1, 48020, writeable=True),
 }
