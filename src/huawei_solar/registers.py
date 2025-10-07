@@ -1097,6 +1097,7 @@ REGISTERS: dict[str, RegisterDefinition] = {
     ),
     rn.ACTIVE_ISLANDING_DETECT: U16Register(bool, 1, 42129, writeable=True),
     rn.WLAN_WAKEUP: I16Register(rv.WlanWakeup, 1, 45052, writeable=True),
+    rn.DEFAULT_ACTIVE_POWER_CHANGE_GRADIENT: ("%/s", 2, 47677, 1000, writeable=True),
     rn.SUN2000_EMMA: U16Register(bool, 1, 48020, writeable=True),
 }
 
