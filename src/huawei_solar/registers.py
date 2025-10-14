@@ -1078,6 +1078,7 @@ REGISTERS: dict[str, RegisterDefinition] = {
     rn.STARTUP: U16Register(None, 1, 40200, writeable=True, readable=False),
     rn.SHUTDOWN: U16Register(None, 1, 40201, writeable=True, readable=False),
     rn.GRID_CODE: U16Register(rv.GRID_CODES, 1, 42000),
+    rn.PLANT_ACTIVE_POWER_GRADIENT: U16Register("min/100%", 1, 42029, writeable=True),
     rn.MPPT_MULTIMODAL_SCANNING: U16Register(bool, 1, 42054, writeable=True),
     rn.MPPT_SCANNING_INTERVAL: U16Register("minutes", 1, 42055, writeable=True),
     rn.MPPT_PREDICTED_POWER: U32Register("W", 1, 42056),
